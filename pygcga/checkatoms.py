@@ -76,6 +76,9 @@ class CheckAtoms(object):
                             if self.verbosity:
                                 print(msg)
                             self.results['close_contact'] = True
+        """
+        specifically designed for Au8/TiO2
+        """
         for i in range(144,n-8):
             isolation=0
             for j in range(n-8,n):

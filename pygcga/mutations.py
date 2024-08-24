@@ -37,7 +37,7 @@ def mutation_atoms(atoms=None,dr_percent=0.6,minimum_displacement=0.5,max_trial=
         a = atoms.copy()
         p0 = a.get_positions()
         dx = np.zeros(shape=p0.shape)
-        dx_trans=[1.50*np.random.uniform(-1.0,1.0),3.25*np.random.uniform(-1.0,1.0),0.54*np.random.uniform(-1.0,1.0)]
+        dx_trans=[1.50*np.random.uniform(-1.0,1.0),3.25*np.random.uniform(-1.0,1.0),0.54*np.random.uniform(-1.0,1.0)] # specifically designed for Au8/TiO2
         for j, sj in enumerate(symbols):
             if sj not in move_elements:
                 continue
